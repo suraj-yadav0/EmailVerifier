@@ -1,0 +1,75 @@
+[
+  {
+    "email": "invalid@nonexistent123.com",
+    "valid_format": true,
+    "dns_valid": false,
+    "mx_records": [],
+    "smtp_check": null,
+    "disposable": false,
+    "catch_all": null,
+    "role_based": false,
+    "free_provider": false,
+    "score": 20,
+    "errors": [
+      "No MX records found"
+    ],
+    "timestamp": "2025-12-01T22:06:11.091393"
+  },
+  {
+    "email": "admin@company.com",
+    "valid_format": true,
+    "dns_valid": false,
+    "mx_records": [],
+    "smtp_check": null,
+    "disposable": false,
+    "catch_all": null,
+    "role_based": true,
+    "free_provider": false,
+    "score": 10,
+    "errors": [
+      "No MX records found"
+    ],
+    "timestamp": "2025-12-01T22:06:11.090206"
+  },
+  {
+    "email": "user@tempmail.com",
+    "valid_format": true,
+    "dns_valid": true,
+    "mx_records": [
+      "park-mx.above.com"
+    ],
+    "smtp_check": false,
+    "disposable": true,
+    "catch_all": null,
+    "role_based": false,
+    "free_provider": false,
+    "score": 20,
+    "errors": [
+      "Disposable email detected",
+      "SMTP verification failed"
+    ],
+    "timestamp": "2025-12-01T22:06:11.090647"
+  },
+  {
+    "email": "test@gmail.com",
+    "valid_format": true,
+    "dns_valid": true,
+    "mx_records": [
+      "gmail-smtp-in.l.google.com",
+      "alt1.gmail-smtp-in.l.google.com",
+      "alt2.gmail-smtp-in.l.google.com",
+      "alt3.gmail-smtp-in.l.google.com",
+      "alt4.gmail-smtp-in.l.google.com"
+    ],
+    "smtp_check": false,
+    "disposable": false,
+    "catch_all": null,
+    "role_based": false,
+    "free_provider": true,
+    "score": 70,
+    "errors": [
+      "SMTP verification failed"
+    ],
+    "timestamp": "2025-12-01T22:06:11.089683"
+  }
+]
